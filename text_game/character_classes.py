@@ -8,6 +8,7 @@ class PlayerClass():
     self.speed = 1
     self.special = ''
     self.experience = 0
+    self.party = []
 
   def __str__(self):
     player_info = f"""{self.name} weilder of {self.name_of_weapon} a {self.weapon}
