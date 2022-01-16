@@ -174,8 +174,12 @@ def befriend_output(input, friend):
     friend.health_points = 0
     return friend
 
+def show_inventory():
+  return player.view_inventory()
 
 def input_interpreter(input, definition_of_input, other_character = None):
+  if input == "inventory":
+    return show_inventory()
   if definition_of_input == "START":
     start_output(input)
   if definition_of_input == "CLASS":
