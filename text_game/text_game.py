@@ -152,8 +152,6 @@ def battle_output(battle_input, enemy):
     else:
       faster_opponent(player,enemy)
 
-
-
 def befriend_output(input, friend):
   if input == "yes":
     print(f"{player.name}: Why dont you join me on this quest so we can make it better for everyone ")
